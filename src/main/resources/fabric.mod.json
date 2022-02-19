@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "lolihavetwohands",
+  "version": "${version}",
+
+  "name": "LOL I Have Two Hands",
+  "description": "Dual welding mod for Minecraft",
+  "authors": [
+    "Francy-Chan"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Kingdom-of-Moon/lolihavetwohands/",
+    "sources": "https://github.com/Kingdom-of-Moon/lolihavetwohands/",
+    "issues": "https://github.com/Kingdom-of-Moon/lolihavetwohands/issues"
+  },
+
+  "license": "LGPL-2.1",
+  "icon": "assets/lolihavetwohands/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.moon.lolihavetwohands.LOLIHaveTwoHands"
+    ],
+    "modmenu": []
+  },
+  "mixins": [
+    "lolihavetwohands.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.18-",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
